@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cedarfield LLC</title>
+<meta name="description" content="Cedarfield LLC is a North Carolina company that builds and publishes mobile apps, including Beacon Rides.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5d46'/%3E%3Cpath d='M32 12 L46 34 H38 L48 50 H16 L26 34 H18 Z' fill='%23f4efe6'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --text: #1d2420;
+    --muted: #5b655f;
+    --line: #e2ddd2;
+    --accent: #2f5d46;
+    --accent-soft: #e6eee9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111614;
+      --surface: #182019;
+      --text: #eef1ee;
+      --muted: #a3ada7;
+      --line: #27322b;
+      --accent: #7fb89a;
+      --accent-soft: #1f2b24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 40px 0 0; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 650; font-size: 1.1rem; letter-spacing: -0.01em; }
+  .mark { width: 36px; height: 36px; border-radius: 9px; background: #2f5d46; display: grid; place-items: center; }
+  .mark svg { width: 20px; height: 20px; }
+  .hero { padding: 72px 0 48px; }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 16px; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0; max-width: 560px; }
+  h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 16px; font-weight: 600; }
+  section { padding: 32px 0; border-top: 1px solid var(--line); }
+  .apps { display: grid; gap: 14px; }
+  .app { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .app h3 { margin: 0 0 4px; font-size: 1.15rem; }
+  .app p { margin: 0 0 10px; color: var(--muted); }
+  .tag { display: inline-block; font-size: 0.8rem; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 3px 10px; border-radius: 999px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a.tag { text-decoration: none; }
+  a.tag:hover { text-decoration: underline; }
+  .contact p { margin: 0 0 6px; }
+  footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2 L18 11 H14.5 L19 18 H5 L9.5 11 H6 Z" fill="#f4efe6"/><rect x="11" y="18" width="2" height="4" fill="#f4efe6"/></svg>
+        </span>
+        Cedarfield LLC
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>We build and publish mobile apps.</h1>
+        <p class="lead">Cedarfield LLC is a North Carolina limited liability company founded by Appalachian State students. We make simple, useful apps for iPhone.</p>
+      </div>
+
+      <section aria-labelledby="apps-heading">
+        <h2 id="apps-heading">Our apps</h2>
+        <div class="apps">
+          <article class="app">
+            <h3>Beacon Rides</h3>
+            <p>A rideshare app that helps Appalachian State students find a ride around town or offer one.</p>
+            <a class="tag" href="https://beaconrides.com">beaconrides.com</a>
+          </article>
+          <article class="app">
+            <h3>Out of Orbit</h3>
+            <p>An iOS game about a stranded astronaut trying to make it home, published by Cedarfield LLC.</p>
+            <span class="tag">Coming soon to the App Store</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Jonathan Brachten: <a href="mailto:Jonathan@CedarfieldLLC.com">Jonathan@CedarfieldLLC.com</a></p>
+        <p>Jack Tyrell: <a href="mailto:Jack@CedarfieldLLC.com">Jack@CedarfieldLLC.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Cedarfield LLC. Beacon Rides is a trade name of Cedarfield LLC.
+    </footer>
+  </div>
+</body>
+</html>
